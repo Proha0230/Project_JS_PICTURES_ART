@@ -1528,6 +1528,15 @@ border: 1px solid white;
     margin-left: auto;
     margin-right: auto;
   }
+  .feedback-slider{
+    margin-bottom: 14rem;
+  }
+  .feedback-slider-item img{
+    width: 100%;
+  }
+  .main-slider-item img{
+    width: 100%;
+  }
   .card-block {
     padding: 5rem;
   }
@@ -1607,6 +1616,15 @@ border: 1px solid white;
 @media (max-width: 577px) {
   h2 {
     font-size: 3.5rem;
+  }
+  .feedback-slider{
+    margin-bottom: 21rem;
+  }
+  .feedback-slider-item img{
+    width: 100%;
+  }
+  .main-slider-item img{
+    width: 100%;
   }
   .p-heading {
     font-size: 1.5rem;
