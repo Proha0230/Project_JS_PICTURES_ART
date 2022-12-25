@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
     forms();
     mask('[name="phone"]');
     checkInputs('[name="message"]','[name="name"]','[name="email"]');
-    showMoreStyles('.button-styles', '#styles .row');
+    showMoreStyles('.button-styles', '.styles-2');
     calc('#size', '#material', '#options', '.promocode', '.calc-price');
     filter();
     pictureSize('.sizes-block');

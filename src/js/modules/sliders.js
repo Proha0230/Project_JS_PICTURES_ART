@@ -49,14 +49,14 @@ const prevBtn = document.querySelector(prev),
 // назначаем на кнопку предыдущего слайда в слайдере 
 prevBtn.addEventListener('click', ()=> {
     plusSlides(-1);
-    items[slideIndex - 1].classList.remove('slideInRight');
-    items[slideIndex - 1].classList.add('slideInLeft');
+    items[slideIndex - 1].classList.remove('slideInDown');
+    items[slideIndex - 1].classList.add('slideInUp');
 });
 // назначаем на кнопку следующего слайда в слайдере 
 nextBtn.addEventListener('click', ()=> {
     plusSlides(1);
-    items[slideIndex - 1].classList.remove('slideInLeft');
-    items[slideIndex - 1].classList.add('slideInRight');
+    items[slideIndex - 1].classList.remove('slideInUp');
+    items[slideIndex - 1].classList.add('slideInDown');
 });
 }
 catch(e){}
@@ -74,8 +74,8 @@ function activateAnimation () {
     } else {
         paused = setInterval (function() {
             plusSlides(1);
-            items[slideIndex - 1].classList.remove('slideInLeft');
-            items[slideIndex - 1].classList.add('slideInRight');
+            items[slideIndex - 1].classList.remove('slideInUp');
+            items[slideIndex - 1].classList.add('slideInDown');
         }, 3000);
     }
 }
